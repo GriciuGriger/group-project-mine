@@ -1,22 +1,12 @@
-body {
-    margin-top: 100px; 
-    background-image: url('img/background.png');
-    background-repeat:  no-repeat;
-    background-size: cover;
-    background-position: 0px -150px;
-}
 
-.img {
-    padding: 10px;
+.pull-right{
+
     margin: auto;
-    width: 100px;
-    position: 250px 250px;
 }
-
 
 .form {
     margin: auto;
-    margin-top: 50px;
+    margin-top: -20px;
     color: #66ff66;
     font: 30px;
     font-family: 'Rye', cursive;
