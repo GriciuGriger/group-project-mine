@@ -1,12 +1,14 @@
-
-.pull-right{
-
-    margin: auto;
+body{
+    background-image: url('img/background.png');
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: 0px -150px;
 }
+
 
 .form {
     margin: auto;
-    margin-top: -20px;
+    margin-top: 0px;
     color: #66ff66;
     font: 30px;
     font-family: 'Rye', cursive;
