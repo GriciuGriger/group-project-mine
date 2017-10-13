@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="SDA-Java3">
+        <meta name="keywords" content="poker badugi SDA group project">
+        <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, tenetur.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body background="a2.png"  >
+        <div class="container">
+            <div class="row">
+                <div class="img">   
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-lg-4"></div>
+                <div class="col-md-4 col-sm-4 col-lg-4">
+
+                        <div class = "panel panel-default">
+
+                            <label for="inputlogin">Login: </label>
+                            <input type="text" class="form-control" id="inputlogin" aria-describedby="login" placeholder="Enter your login" required autofocus ng-model="req.username">
+
+                            <label for="inputEmail">Email: </label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="email" placeholder="Enter your email" required autofocus ng-model="req.email">
+
+                            <label for="inputREmail">Repeat email: </label>
+                            <input type="email" class="form-control" id="inputREmail" aria-describedby="reemail" placeholder="Repeat your email" required autofocus ng-model="req.matchingEmail">
+
+                            <label for="inputPassword">Password: </label>
+                            <input type="password" class="form-control" id="inputPassword" aria-describedby="password" placeholder="Enter your Password" required autofocus ng-model="req.password">
+
+                            <label for="inputRPassword">Repeat Password: </label>
+                            <input type="password" class="form-control" id="inputRPassword" aria-describedby="repassword" placeholder="Repeat your Password" required autofocus ng-model="req.matchingPassword">
+
+                            <div class="form-group text-right">
+                                <small><a ng-href="/#/login">Login</a></small>
+                            </div>
+
+                            <div class="text-right">
+                            <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="register1(req)">Register</button>
+                             </div>
+
+                         </div>
+
+                <div class="col-md-4 col-sm-4 col-lg-4"></div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

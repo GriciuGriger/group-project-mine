@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>resetPassword</title>
+</head>
+<body>
+    
+<form action="/api/users/recovery/reset" method="post">
+    <div>Token : <input type="text" name="token" ng-model="token"/></div>
+    <div>New Password : <input type="password" name="password"/></div>
+    <div>Repeat Password: <input type="password" name="matchingPassword"/></div>
+    <div><input type="submit" value="Reset"/></div>
+</form>
+
+</body>
+</html>

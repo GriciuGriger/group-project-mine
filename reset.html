@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="SDA-Java3">
+    <meta name="keywords" content="poker badugi SDA group project">
+    <meta name="description" content="Group project made by Java-3 group of Software Development Academy">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="a2.png" style="background-position: 0 0px">
+<section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-sm-1 col-lg-1"></div>
+            <div class="col-md-1 col-sm-1 col-lg-3">
+                <div class="img">
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-lg-4"></div>
+            <div class="col-md-4 col-sm-4 col-lg-4">
+                <div class = "panel panel-default" style="margin-top: 100px">
+
+                    <label for="token">Token: </label>
+                    <input type="text" class="form-control" id="token" aria-describedby="token" placeholder="Enter token" required ng-model ="credentials.token">
+
+                    <label for="inputPassword">New password: </label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required
+                           ng-model="credentials.password">
+
+                    <label for="inputPassword">Repeat password: </label>
+                    <input type="password" class="form-control" id="repPassword" placeholder="Repeat password" required
+                           ng-model="credentials.matchingPassword">
+                    <p>    </p>
+                    <pre> </pre>
+                    <div class="text-right">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="reset(credentials)">Reset</button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>

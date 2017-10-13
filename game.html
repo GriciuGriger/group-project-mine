@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="SDA-Java3">
+    <meta name="keywords" content="poker badugi SDA group project">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, tenetur.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="a2.png"  >
+
+
+<div class="container" >
+
+    <table style="width: 100%;">
+        <tr >
+            <th style="width: 30%">
+                Action Bar
+                <table style="width: 100%;">
+                    <tr >
+                        <th style="width: 50%">
+                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <input type="text" height="1" size="2" class="form-control" id="bd"  placeholder="Enter your bid" required ng-model ="credentials.bid">
+                                <p></p>
+                                <button class="btn btn-sm btn-primary btn-block" type="submit" ng-click="check">CHECK</button>
+
+                            </div>
+
+                        </th>
+                        <th style="width: 50%">
+
+                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+
+                                <button class="btn btn-sm btn-success btn-block" type="submit" ng-click="bet(credentials)">BET</button>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <button class="btn btn-sm btn-warning btn-block" type="submit" ng-click="fold()">FOLD</button>
+
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+
+            </th>
+
+            <th style="width: 70%;">
+                Game
+                <div class = "panel panel-default">
+                        <table border="2"  style="width: 100%;" bgcolor="#088A08">
+                            <div class="col-md-12 col-sm-12 col-lg-12">
+                            <tr>
+                                 <th>
+                                     <pre>{{players[3].t1}}</pre>
+                                     <pre>{{players[3].t2}}</pre>
+                                     <pre>{{players[3].t3}}</pre>
+                                     <pre>{{players[3].t4}}</pre>
+                                 </th>
+
+
+                                <th>
+                                    <pre>{{players[4].t1}}</pre>
+                                    <pre>{{players[4].t2}}</pre>
+                                    <pre>{{players[4].t3}}</pre>
+                                    <pre>{{players[4].t4}}</pre>
+                                </th>
+                                <th>
+                                    <pre>{{players[5].t1}}</pre>
+                                    <pre>{{players[5].t2}}</pre>
+                                    <pre>{{players[5].t3}}</pre>
+                                    <pre>{{players[5].t4}}</pre>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <pre>{{players[2].t1}}</pre>
+                                    <pre>{{players[2].t2}}</pre>
+                                    <pre>{{players[2].t3}}</pre>
+                                    <pre>{{players[2].t4}}</pre>
+                                </th>
+                                <th>{{HAJS NA STOLE}}</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <pre>{{players[1].t1}}</pre>
+                                    <pre>{{players[1].t2}}</pre>
+                                    <pre>{{players[1].t3}}</pre>
+                                    <pre>{{players[1].t4}}</pre>
+                                </th>
+                                <th>
+                                    <pre>{{players[0].t1}}</pre>
+                                    <pre>{{players[0].t2}}</pre>
+                                    <pre>{{players[0].t3}}</pre>
+                                    <pre>{{players[0].t4}}</pre>
+                                </th>
+                                <th>
+
+                                </th>
+                            </tr>
+                            </div>
+                        </table>
+
+                </div>
+                <div class = "panel panel-default">
+                    <table border="2"  style="width: 100%;" >
+                    <div class="col-md-12 col-sm-12 col-lg-12">
+                        <th align="center" >YOUR CARDS</th>
+
+
+
+                    </div>
+                </table>
+                    <table border="2"  style="width: 100%;">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <th>
+                                <label>
+                                    <input type="checkbox" id="0" ng-model="cardA"> Karta A
+                                    <pre><label for="0">{{}}</label></pre>
+                                    <pre><label for="0">{{}}</label></pre>
+                                </label>
+                            </th>
+                            <th>
+                                <label>
+                                    <input type="checkbox" id="1" ng-model="cardB"> Karta B
+                                  <pre><label for="1">{{}}</label></pre>
+                                    <pre><label for="1">{{}}</label></pre>
+                                </label>
+                            </th>
+                            <th>
+                                <label>
+                                    <input type="checkbox" id="2" ng-model="cardC"> Karta C
+                                    <pre><label for="2">{{}}</label></pre>
+                                    <pre><label for="2">{{}}</label></pre>
+                                </label>
+                            </th>
+                            <th>
+                                <label><input type="checkbox" id="3" ng-model="cardD"> Karta D
+                                    <pre><label for="3">{{}}</label></pre>
+                                    <pre><label for="3">{{}}</label></pre>
+                                </label>
+                            </th>
+
+
+                        </div>
+                    </table>
+
+
+                </div>
+            </th>
+
+        </tr>
+    </table>
+
+
+</div>
+
+
+
+</body>
+</html>
